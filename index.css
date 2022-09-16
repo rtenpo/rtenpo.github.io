@@ -132,7 +132,7 @@ body {
 .me {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.3) 90%, #000 100%), url(img/back.svg);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.3) 90%, #000 100%), url(img/back.png);
     background-size: cover;
     background-position: center;
 }
