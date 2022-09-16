@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+}
+
 
 /*-------------------------------------------- nav bar --------------------------------------*/
 
@@ -122,72 +126,86 @@ span {
 }
 
 
-/*-------------------------------------------- FIN DU NAV BAR --------------------------------------*/
+/*-----------------------------------------------------------------------------*/
 
-body {
-    background-size: cover;
-    background-repeat: no-repeat;
+.ab-text {
+    padding: 100px 20%;
 }
 
-.me {
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.3) 90%, #000 100%), url(img/back.svg);
-    background-size: cover;
-    background-position: center;
+.heading {
+    text-align: center;
 }
 
-#mee {
-    position: absolute;
+.heading h1 {
+    font-size: 14px;
+    color: white;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+.heading p {
+    color: white;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+.container {
     display: grid;
-    grid-template: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.7rem;
     align-items: center;
-    justify-items: center;
-    width: 50%;
-    height: 100%;
-    z-index: 100000;
+    margin-top: 5rem;
 }
 
-#mee img {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    height: 55%;
-    width: 50%;
-    left: 5%;
-}
-
-.content {
+.box {
+    height: 340px;
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgb(103, 145, 192);
+    transition: all 0.8s;
+    cursor: pointer;
     position: relative;
-    float: left;
-    top: 45%;
-    padding-right: 5%;
-    padding-left: 5%;
-    transform: translateY(-30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-h1 {
-    color: rgb(255, 255, 255);
-    margin: 20px 0px 20px;
-    font-size: 60px;
+.box1 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(img/S1.png) center center no-repeat;
+    background-size: cover;
+    z-index: 100;
 }
 
-h3 {
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    margin-bottom: 50px;
+.box1:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
 }
 
-h4 {
-    color: rgb(255, 255, 255);
-    letter-spacing: 2px;
-    font-size: 20px;
+.box2 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(img/S2.png) center center no-repeat;
+    background-size: cover;
+}
+
+.box2:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.in {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .bottom {
     text-align: center;
-    background-color: black;
     color: #adb5bd;
+    margin-top: 100px;
     font-size: 15px;
     letter-spacing: 1px;
     padding: 20px 20%;
