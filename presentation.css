@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #0f0f1a;
 }
 
 
@@ -135,4 +135,29 @@ span {
     font-size: 15px;
     letter-spacing: 1px;
     padding: 20px 20%;
+}
+
+
+/*------------------------------------- youtube ------------------------------------------*/
+
+main {
+    margin-top: 100px;
+}
+
+main h2 {
+    color: #0096ff;
+}
+
+main h1 {
+    color: white;
+}
+
+main a {
+    color: white;
+    text-decoration: none;
+}
+
+.group {
+    padding-left: 7%;
+    padding-right: 7%;
 }

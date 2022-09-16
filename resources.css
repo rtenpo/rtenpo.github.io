@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: #0f0f1a;
 }
 
 
@@ -172,7 +172,7 @@ span {
 }
 
 .box1 {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(img/S1.png) center center no-repeat;
+    background: linear-gradient(to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.3) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/S1.png) center center no-repeat;
     background-size: cover;
     z-index: 100;
 }
@@ -184,11 +184,22 @@ span {
 }
 
 .box2 {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(img/S2.png) center center no-repeat;
+    background: linear-gradient(to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.3) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/S2.png) center center no-repeat;
     background-size: cover;
 }
 
 .box2:hover {
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+
+.box3 {
+    background: linear-gradient(to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.3) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/youtube.png) center center no-repeat;
+    background-size: cover;
+}
+
+.box3:hover {
     transform: translateY(20px);
     transition: all 0.5s ease;
     opacity: 0.6;
