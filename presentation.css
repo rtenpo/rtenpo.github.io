@@ -140,24 +140,38 @@ span {
 
 /*------------------------------------- youtube ------------------------------------------*/
 
-main {
+.text {
+    margin: 100px 10% 10% 10%;
+    background-color: #0f0f1a;
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.text #title {
+    color: #0096ff;
+    justify-self: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.text p {
+    color: #ffffff;
+    justify-self: center;
+}
+
+#s1 {
+    padding-left: 25px;
+}
+
+#s2 {
+    padding-left: 25px;
+}
+
+.text #list {
     margin-top: 100px;
 }
 
-main h2 {
+.text ul li ul li {
     color: #ffffff;
-}
-
-main h1 {
-    color: #0096ff;
-}
-
-main a {
-    color: white;
-    text-decoration: none;
-}
-
-.group {
-    padding-left: 7%;
-    padding-right: 7%;
+    list-style-type: circle;
 }

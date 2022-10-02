@@ -133,7 +133,7 @@ body {
 .me {
     height: 100vh;
     width: 100%;
-    background-image: url(img/back.svg);
+    background: linear-gradient(to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/back.svg);
     background-size: cover;
     background-position: center;
 }
@@ -185,12 +185,32 @@ h4 {
     font-size: 20px;
 }
 
+.info {
+    background-color: #0f0f1a;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.info img {
+    position: stretch;
+    width: 75%;
+    border-radius: 20px;
+}
+
+.info a {
+    color: white;
+    text-decoration: none;
+}
+
 .bottom {
     text-align: center;
-    background-color: black;
+    background-color: #0f0f1a;
     color: #adb5bd;
     font-size: 15px;
     letter-spacing: 1px;
     padding: 20px 20%;
-    filter: drop-shadow(-0px -20px 30px rgb(0, 0, 0))
+    /*filter: drop-shadow(-0px -20px 30px rgb(0, 0, 0))*/
 }
