@@ -7,7 +7,7 @@ textArea.style.cssText = ` height: ${textArea.scrollHeight}px;
                            overflow-y: hidden; `;
 
 textArea.addEventListener("input", function(){
-          this.style.height = `${this.scrollHeight}px`;
+          this.style.height = `max(${this.scrollHeight}px , 3rem)`;
           this.style.transition = 'height 0.1s';
      }
 );
