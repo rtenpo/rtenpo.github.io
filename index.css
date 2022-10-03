@@ -185,26 +185,6 @@ h4 {
     font-size: 20px;
 }
 
-.info {
-    background-color: #0f0f1a;
-    height: 100vh;
-    width: 100%;
-    color: white;
-    display: grid;
-    grid-template-columns: auto;
-}
-
-.info img {
-    position: stretch;
-    width: 75%;
-    border-radius: 20px;
-}
-
-.info a {
-    color: white;
-    text-decoration: none;
-}
-
 .bottom {
     text-align: center;
     background-color: #0f0f1a;
