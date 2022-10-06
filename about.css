@@ -2,12 +2,15 @@
     padding: 0%;
     margin: 0%;
     list-style: none;
+    text-decoration: none;
     font-family: 'poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
 }
 
 body {
     background-color: #0f0f1a;
+    height: 100vh;
+    color: white;
 }
 
 
@@ -69,6 +72,247 @@ nav #icon {
     cursor: pointer;
 }
 
+span {
+    color: #0096ff;
+}
+
+
+/*-----------------------------------------------------------------------------*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 7vh 6rem;
+}
+
+.card{
+    width: 250px;
+    height: 250px;
+    margin: 10% 2% 2% 5%;
+    perspective: 1000px;
+}
+
+.in {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    border-radius: 2rem;
+    transform-style: preserve-3d;
+    transition: all 0.6s ease-out;
+}
+
+.front, .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 3rem;
+}
+
+.front{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0096ff;
+    font-size: 2rem;
+}
+
+.back{
+    display: flex;
+    justify-content:space-around;
+    align-items: space-around;
+    flex-direction: column;
+    overflow: none;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    transform: rotateX(180deg);
+}
+
+.card:hover .in{
+    transform: rotateX(-180deg);
+}
+
+
+hr{
+    align-self: center;
+    width: 80%;
+    height: 7px;
+    border-radius: 7px;
+    background-color: #000000;
+}
+
+.link a{
+    pointer-events: none;
+    text-decoration: none;
+    width: 0%;
+    height: 0%;
+}
+
+.link:hover a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/*----------------------  back of the card   ----------------------*/
+
+
+.iheb{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3rem;
+    margin: 1rem 1rem 0 ;
+    transition: all 0.25s ease-in-out;
+}
+
+.iheb img{
+    object-fit: cover;
+    object-position: center; 
+    border-radius: 50%; 
+    width: 100px;
+    margin-left: 10%;
+    transition: all 0.25s ease-in-out;
+}
+
+.iheb span{
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 0px;
+    cursor: pointer;
+}
+
+.iheb:hover{
+    background-color: #f8f2da;  
+    border-bottom: 3px solid hsla(0, 0%, 0%, 0.173);  
+    border-top: 3px solid hsla(0, 0%, 0%, 0.173);
+    border-radius: 3rem;
+    margin: 1rem 1rem 0 1rem;
+    animation: link 0.5s ease-out forwards;
+}
+
+.iheb:active{
+    background-color: #fdfbf4;
+    transition: all 0.1s ease-in-out;
+}
+
+.iheb:hover img{
+    margin-left: 2px;
+    width: 38%; 
+    transition: all 0.25s ease-in-out;
+}
+
+.iheb:hover span{
+    align-self: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-decoration: underline;
+    margin: auto 0;
+    transition: all 0.25s ease-in-out;
+}
+
+@keyframes link{
+    0%{
+        scale:1;
+    }
+    33%{
+        scale: 1.1;
+    }
+    100%{
+        scale:1;
+    }
+}
+
+/*----------------------  back of the card   ----------------------*/
+
+.lokmane{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    cursor: pointer;
+    border-radius: 3rem;   
+    margin: 0 1rem 1rem;
+    transition: all 0.25s ease-in-out;
+}
+
+.lokmane img{
+    object-fit: cover; 
+    object-position: center;
+    border-radius: 50%; 
+    width: 100px;
+    margin-right: 10%;
+    transition: all 0.25s ease-in-out;
+}
+
+.lokmane span{
+    text-decoration: none;
+    overflow: hidden;    
+    font-size: 0;
+    cursor: pointer;
+}
+
+.lokmane:hover{
+    background-color: #f8f2da;
+    border-bottom: 3px solid hsla(0, 0%, 0%, 0.173);
+    border-top: 3px solid #0000002c;
+    border-radius: 3rem;
+    margin: 0 1rem 1rem 1rem;
+    animation: link 0.5s ease-out;
+}
+
+.lokmane:active{
+    background-color: #fdfbf4;
+    transition: all 0.1s ease-in-out;
+}
+
+.lokmane:hover img{
+    margin-right: 2px;
+    width: 38%; 
+    margin-left: 2px;
+   transition: all 0.25s ease-in-out;
+}
+
+.lokmane:hover span{
+    align-self: center;
+    font-size: 2rem;
+    font-weight: 800;
+    text-decoration: underline;
+    margin: auto 0;
+    transition: all 0.25s ease-in-out;
+}
+
+.bottom {
+    position:sticky;  
+    text-align: center;
+    color: #adb5bd;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-top: max(12vw , 100px);
+    padding-bottom: min(3vh , 20px) ;
+    cursor:default;
+}
+.bottom::before {
+    content: "";
+    width: 1%;
+    height: 100%;
+    transition: all 1s ease-out;
+}
+
+.bottom:hover,  .bottom::before{
+    width: 100%;
+    color: #0096ff; 
+    text-shadow: 0 0 10px #0096ff;
+}
+
+
 @media(max-width: 100%) {
     label.logo {
         font-size: 32px;
@@ -79,6 +323,13 @@ nav #icon {
     }
     nav a {
         font-size: 17px;
+    }
+} 
+
+
+@media (max-width:1040px) {
+    #mee {
+        left: -100%;
     }
 }
 
@@ -108,149 +359,112 @@ nav #icon {
     nav ul.show {
         left: 0;
     }
-    h1 {
-        color: rgb(255, 255, 255);
-        margin: 20px 0px 20px;
-        font-size: 50px;
+    .iheb {
+        margin: 1rem 0 0 0rem;
+    }
+    .lokmane {
+        margin: 0 0rem 1rem 0;
+    }
+
+}
+
+@media (max-width:475px) {
+    .card:first-child{
+        margin: 35% auto 10%;
+    }
+    .card{
+        width: 100%;
+        height: 60vw;
+
+    }
+    .link:hover{
+        margin: 1rem ;
+        height: fit-content;
+    }
+    .link img{
+        width: 90px;
+    }
+    .iheb img{
+        margin-left: 1rem;
+    }
+    .lokmane img{
+        margin-right: 1rem;
+    }
+
+    .iheb:hover span{
+        font-size: min(2.4rem , 8vw);
+    }    
+    hr{
+        height: 6px;
+    }
+    .lokmane:hover span{
+        font-size: max(1.3rem , 6vw);
+        margin: 0;
     }
 }
 
-@media (max-width:1040px) {
-    #mee {
-        left: -100%;
+
+@media (max-width: 390px) {
+    .container{
+        margin: 7vh 14vh;
+    }
+    .card:first-child{
+        margin: 35% auto 10%;
+    }
+    .card{
+        margin: 10% auto;
+        height: 64vw;
+    }
+    .card img{
+        margin: 0 auto;
+    }
+    .iheb {
+        margin-right: 5rem;
+    }
+    hr{
+        height: 5px;
+    }
+    .lokmane {
+        margin-left: 5rem;
+    }
+    .link img{
+        width: 85px;
+    }
+    .iheb:hover span{
+        font-size: min(2rem , 12vw);
+    }
+    .lokmane:hover span{
+        font-size: min(1.6rem , 5.9vw);
     }
 }
 
-span {
-    color: #0096ff;
-}
-
-
-/*-----------------------------------------------------------------------------*/
-
-.ab-text {
-    padding: 100px 20%;
-}
-
-.heading {
-    text-align: center;
-}
-
-.heading h1 {
-    font-size: 14px;
-    color: white;
-    letter-spacing: 0.5px;
-    margin-bottom: 30px;
-}
-
-.heading p {
-    color: white;
-    font-size: 12px;
-    line-height: 28px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-    grid-gap: 1.7rem;
-    align-items: center;
-    margin-top: 5rem;
-}
-
-.box {
-    height: 340px;
-    width: auto;
-    border-radius: 10px;
-    overflow: hidden;
-    background: rgb(103, 145, 192);
-    transition: all 0.8s;
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.box1 {
-    background: linear-gradient(to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.3) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/facebook.png) center center no-repeat;
-    background-size: cover;
-    z-index: 100;
-}
-
-.box1:hover {
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-    opacity: 0.6;
-}
-
-.box2 {
-    background: linear-gradient(to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.3) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/instagram.png) center center no-repeat;
-    background-size: cover;
-}
-
-.box2:hover {
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-    opacity: 0.6;
-}
-
-.box3 {
-    background: linear-gradient(to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.3) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/github.png) center center no-repeat;
-    background-size: cover;
-}
-
-.box3:hover {
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-    opacity: 0.6;
-}
-
-.box4 {
-    background: linear-gradient(to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.3) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/linkedin.png) center center no-repeat;
-    background-size: cover;
-}
-
-.box4:hover {
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-    opacity: 0.6;
-}
-
-.box5 {
-    background: linear-gradient(to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.3) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/youtube.png) center center no-repeat;
-    background-size: cover;
-}
-
-.box5:hover {
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-    opacity: 0.6;
-}
-
-.box6 {
-    background: linear-gradient(to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.3) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/gmail.png) center center no-repeat;
-    background-size: cover;
-}
-
-.box6:hover {
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-    opacity: 0.6;
-}
-
-.in {
-    position: absolute;
-    bottom: 20px;
-    color: white;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
-.bottom {
-    text-align: center;
-    color: #adb5bd;
-    margin-top: 100px;
-    font-size: 15px;
-    letter-spacing: 1px;
-    padding: 20px 20%;
+@media (max-width: 320px) {
+    .container{
+        margin: 7vh 14vh;
+    }
+    .card:first-child{
+        margin: 35% auto 10%;
+    }
+    .card{
+        margin: 10% auto;
+        width: 100%;
+    }
+    .iheb {
+        margin-right: 3.5rem;
+    }
+    hr{
+        height: 5px;
+    }
+    .lokmane {
+        margin-left:3.5rem;
+    }
+    .link img{
+        width: 70px;
+    }
+    .iheb:hover span{
+        font-size: min(1.7rem , 10vw);
+    }    
+    .lokmane:hover span{
+        font-size: min(1.7rem , 5.7vw);
+    }
 }
