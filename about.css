@@ -63,7 +63,7 @@ nav a {
     border-radius: 3px;
 }
 
-li a:hover {
+nav li a:hover {
     color: #0096ff;
 }
 
@@ -85,19 +85,24 @@ span {
 /*-----------------------------------------------------------------------------*/
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 1.7rem;
     align-items: center;
-    justify-content: space-around;
-    gap: 3vw;
-    margin: 7vh 3vw;
+    margin: 5rem 15%;
 }
 
 .card {
-    width: 250px;
-    height: 250px;
-    margin: 10vw 0;
-    perspective: 1000px;
+    height: 240px;
+    width: 240px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.8s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-self: center;
+    justify-self: center;
 }
 
 .in {
@@ -136,7 +141,7 @@ span {
     overflow: none;
     background-color: white;
     color: black;
-    font-size: 1.5rem;
+    font-size: 10px;
     transform: rotateX(180deg);
 }
 
@@ -152,6 +157,10 @@ hr {
     background-color: #000000;
 }
 
+.link {
+    overflow: hidden;
+}
+
 .link a {
     pointer-events: none;
     text-decoration: none;
@@ -162,6 +171,7 @@ hr {
 .link:hover a {
     display: flex;
     align-items: center;
+    text-decoration: none;
     justify-content: center;
     width: 100%;
     height: 100%;
@@ -218,9 +228,9 @@ hr {
 
 .iheb:hover span {
     align-self: center;
-    font-size: 2.5rem;
-    font-weight: 800;
-    text-decoration: underline;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
     margin: auto 0;
     transition: all 0.25s ease-in-out;
 }
@@ -289,9 +299,10 @@ hr {
 
 .lokmane:hover span {
     align-self: center;
-    font-size: 2rem;
-    font-weight: 800;
-    text-decoration: underline;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    width: 100%;
     margin: auto 0;
     transition: all 0.25s ease-in-out;
 }
@@ -366,26 +377,10 @@ hr {
     nav ul.show {
         left: 0;
     }
-    .container{
-        margin: 12vh auto;
-        gap: 5vw;
-    }
-    .card {
-        margin: 5vh 0;
-    }
     .iheb {
         margin: 1rem 0 0 0rem;
     }
     .lokmane {
         margin: 0 0rem 1rem 0;
-    }
-}
-
-@media (max-width:250px) {
-    .iheb:hover span{
-        font-size: 2rem;
-    }
-    .lokmane:hover span{
-        font-size: min(1.6rem , 10vw);
     }
 }

@@ -255,3 +255,17 @@ textarea {
     letter-spacing: 1px;
     padding: 1rem 20%;
 }
+
+.bottom::before {
+    content: "";
+    width: 1%;
+    height: 100%;
+    transition: all 1s ease-out;
+}
+
+.bottom:hover,
+.bottom::before {
+    width: 100%;
+    color: #0096ff;
+    text-shadow: 0 0 10px #0096ff;
+}
