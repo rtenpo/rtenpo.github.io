@@ -90,6 +90,7 @@ span {
     grid-gap: max(4rem , 7vw);
     align-items: center;
     margin: 5rem 15%;
+    margin-top: 15vh;
 }
 
 .card {
