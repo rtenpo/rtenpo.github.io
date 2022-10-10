@@ -3,6 +3,7 @@ const iheb = document.getElementsByClassName('iheb');
 const link = document.getElementsByClassName('link');
 const lokmane = document.getElementsByClassName('lokmane');
 const anchor = document.getElementsByClassName('anchor');
+const mail = document.getElementsByClassName('mail');
 
 for (let i = 0; i < line.length; i++) {
      line[i].style.rotate = '-30deg';
@@ -53,3 +54,16 @@ for (let i = 0; i < link.length; i++) {
           anchor[i].style.pointerEvents = 'none';
      };
 } 
+
+mail[0].onclick = () => {
+     navigator.clipboard.writeText('benariba28@gmail.com');
+     setTimeout(() =>{
+          window.alert('Copied to clipboard');
+     },500);
+};
+     mail[1].onclick = () => {
+     navigator.clipboard.writeText('Lokmankerboua@gmail.com');
+     setTimeout(() =>{
+          window.alert('Copied to clipboard');
+     },500);
+};
