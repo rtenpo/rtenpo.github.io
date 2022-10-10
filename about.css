@@ -180,7 +180,7 @@ hr {
     height: 100%;
 }
 
-.link:last-child:hover a {
+.youtube a {
 border-radius: 3rem;
 overflow: hidden;
 }
