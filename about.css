@@ -150,7 +150,6 @@ span {
 }
 .card:last-child:hover .in{
     transform: none;
-    border-radius: 3rem;
 }
 
 hr {
@@ -177,7 +176,12 @@ hr {
     align-items: center;
     text-decoration: none;
     justify-content: center;
-    border-radius: 3rem;
+    width: 100%;
+    height: 100%;
+}
+
+.link:last-child:hover a {
+border-radius: 3rem;
 }
 
 
@@ -231,7 +235,7 @@ hr {
 
 .iheb:hover span {
     align-self: center;
-    font-size: 1.6rem;
+    font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
     margin: auto auto;
@@ -302,7 +306,7 @@ hr {
 
 .lokmane:hover span {
     align-self: center;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
     width: 100%;
