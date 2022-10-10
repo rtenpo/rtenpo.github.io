@@ -122,6 +122,7 @@ span {
     position: absolute;
     width: 100%;
     height: 100%;
+    overflow: hidden;
     backface-visibility: hidden;
     border-radius: 3rem;
 }
@@ -138,7 +139,6 @@ span {
     justify-content: space-around;
     align-items: space-around;
     flex-direction: column;
-    overflow: none;
     background-color: white;
     color: black;
     font-size: 10px;
