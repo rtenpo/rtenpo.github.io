@@ -182,6 +182,7 @@ hr {
 
 .link:last-child:hover a {
 border-radius: 3rem;
+overflow: hidden;
 }
 
 
