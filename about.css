@@ -165,6 +165,21 @@ hr {
     overflow: hidden;
 }
 
+.link a {
+    pointer-events: none;
+    text-decoration: none;
+    width: 0%;
+    height: 0%;
+}
+
+.link:hover a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 3rem;
+}
+
 
 /*----------------------  back of the card   ----------------------*/
 

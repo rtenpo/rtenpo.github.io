@@ -220,10 +220,26 @@ span {
 }
 
 .bottom {
+    position: sticky;
     text-align: center;
     color: #adb5bd;
-    margin-top: 100px;
-    font-size: 15px;
+    font-size: 1rem;
     letter-spacing: 1px;
-    padding: 20px 20%;
+    margin-top: max(12vw, 100px);
+    padding-bottom: min(3vh, 20px);
+    cursor: default;
+}
+
+.bottom::before {
+    content: "";
+    width: 1%;
+    height: 100%;
+    transition: all 1s ease-out;
+}
+
+.bottom:hover,
+.bottom::before {
+    width: 100%;
+    color: #0096ff;
+    text-shadow: 0 0 10px #0096ff;
 }

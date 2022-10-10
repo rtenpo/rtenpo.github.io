@@ -182,23 +182,27 @@ h4 {
 }
 
 
-/*
- .enpo {}
-
-.enpo img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-}
- */
-
 .bottom {
+    position: sticky;
     text-align: center;
-    background-color: #0f0f1a;
     color: #adb5bd;
-    font-size: 15px;
+    font-size: 1rem;
     letter-spacing: 1px;
-    padding: 20px 20%;
-    /*filter: drop-shadow(-0px -20px 30px rgb(0, 0, 0))*/
+    margin-top: max(12vw, 100px);
+    padding-bottom: min(3vh, 20px);
+    cursor: default;
+}
+
+.bottom::before {
+    content: "";
+    width: 1%;
+    height: 100%;
+    transition: all 1s ease-out;
+}
+
+.bottom:hover,
+.bottom::before {
+    width: 100%;
+    color: #0096ff;
+    text-shadow: 0 0 10px #0096ff;
 }
