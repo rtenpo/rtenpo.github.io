@@ -21,6 +21,7 @@ body {
     justify-content: center;
     text-decoration: none;
     font-size: 40px;
+    z-index: 9999999;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.185);
     position: fixed;
