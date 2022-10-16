@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #0f0f1a;
+    background-color: #ffffff;
     height: 100vh;
     color: white;
 }
@@ -18,18 +18,18 @@ body {
 .floating {
     width: 70px;
     height: 70px;
-    background: rgb(255, 255, 255);
+    background: black;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     font-size: 40px;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.185);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0.25);
     position: fixed;
     right: 20px;
     bottom: 20px;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 
@@ -41,7 +41,7 @@ nav {
     grid-template-columns: 25% 75%;
     position: fixed;
     top: 0;
-    background-color: #0f0f1a;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     z-index: 100001;
     width: 100%;
@@ -57,13 +57,13 @@ nav {
 
 .logo #line1 {
     font-size: 25px;
-    color: rgb(255, 255, 255);
+    color: black;
     font-weight: 600;
 }
 
 .logo #line2 {
     vertical-align: middle;
-    color: rgb(255, 255, 255);
+    color: black;
     font-size: 15px;
     font-weight: 500;
 }
@@ -81,7 +81,7 @@ nav li {
 }
 
 nav a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
@@ -91,11 +91,11 @@ nav a {
 }
 
 li a:hover {
-    color: #0096ff;
+    color: #575757;
 }
 
 .fas {
-    color: rgb(255, 255, 255);
+    color: black;
 }
 
 nav #icon {
@@ -138,7 +138,7 @@ nav #icon {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: #0f0f1a;
+        background-color: #ffffff;
         top: 80px;
         z-index: 1000;
         left: -100%;
@@ -195,7 +195,8 @@ nav #icon {
     display: flex;
     align-self: center;
     justify-self: center;
-    border-radius: 3rem;
+    border: rgb(189, 189, 189) solid;
+    border-radius: 70px;
 }
 
 .in {
@@ -228,7 +229,7 @@ nav #icon {
     justify-content: space-around;
     align-items: space-around;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(189, 189, 189);
     transform: rotateX(180deg);
 }
 

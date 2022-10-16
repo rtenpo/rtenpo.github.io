@@ -9,24 +9,24 @@
 }
 
 body {
-    background-color: #0f0f1a;
+    background-color: #ffffff;
 }
 
 .floating {
     width: 70px;
     height: 70px;
-    background: rgb(255, 255, 255);
+    background: black;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     font-size: 40px;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.185);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0.25);
     position: fixed;
     right: 20px;
     bottom: 20px;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 
@@ -38,7 +38,7 @@ nav {
     grid-template-columns: 25% 75%;
     position: fixed;
     top: 0;
-    background-color: #0f0f1a;
+    background-color: rgb(255, 255, 255);
     width: 100%;
     z-index: 100001;
     width: 100%;
@@ -54,13 +54,13 @@ nav {
 
 .logo #line1 {
     font-size: 25px;
-    color: rgb(255, 255, 255);
+    color: black;
     font-weight: 600;
 }
 
 .logo #line2 {
     vertical-align: middle;
-    color: rgb(255, 255, 255);
+    color: black;
     font-size: 15px;
     font-weight: 500;
 }
@@ -78,7 +78,7 @@ nav li {
 }
 
 nav a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
@@ -88,11 +88,11 @@ nav a {
 }
 
 li a:hover {
-    color: #0096ff;
+    color: #575757;
 }
 
 .fas {
-    color: rgb(255, 255, 255);
+    color: black;
 }
 
 nav #icon {
@@ -135,7 +135,7 @@ nav #icon {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: #0f0f1a;
+        background-color: #ffffff;
         top: 80px;
         z-index: 1000;
         left: -100%;
@@ -181,105 +181,33 @@ nav #icon {
 }
 
 .heading h1 {
-    font-size: 14px;
-    color: white;
-    letter-spacing: 0.5px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
     margin-bottom: 30px;
 }
 
 .heading p {
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 12px;
     line-height: 28px;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-    grid-gap: 1.7rem;
-    align-items: center;
-    margin-top: 5rem;
+.ab-text a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
-.box {
-    height: 340px;
-    width: auto;
-    border-radius: 10px;
-    overflow: hidden;
-    background: rgb(103, 145, 192);
-    transition: all 0.8s;
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.ab-text ul li {
+    list-style-type: circle;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: 30px;
 }
 
-.box1 {
-    background: linear-gradient( to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.3) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/reseaux.png) center center no-repeat;
-    background-size: cover;
-    z-index: 100;
-}
-
-.box1:hover {
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-    opacity: 0.6;
-}
-
-.box2 {
-    background: linear-gradient( to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.3) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/OW.png) center center no-repeat;
-    background-size: cover;
-}
-
-.box2:hover {
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-    opacity: 0.6;
-}
-
-.box3 {
-    background: linear-gradient( to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.3) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/TW.png) center center no-repeat;
-    background-size: cover;
-}
-
-.box3:hover {
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-    opacity: 0.6;
-}
-
-.box4 {
-    background: linear-gradient( to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.3) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/PS.png) center center no-repeat;
-    background-size: cover;
-}
-
-.box4:hover {
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-    opacity: 0.6;
-}
-
-.box5 {
-    background: linear-gradient( to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.3) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/java.png) center center no-repeat;
-    background-size: cover;
-}
-
-.box5:hover {
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-    opacity: 0.6;
-}
-
-.box6 {
-    background: linear-gradient( to bottom, rgba(15, 15, 26, 0) 0%, rgba(15, 15, 26, 0.3) 50%, rgba(15, 15, 26, 0.7) 75%, #0f0f1a 100%), url(img/TS.png) center center no-repeat;
-    background-size: cover;
-}
-
-.box6:hover {
-    transform: translateY(20px);
-    transition: all 0.5s ease;
-    opacity: 0.6;
+.ab-text ul {
+    margin-left: 9%;
+    padding-top: 20px;
 }
 
 .in {

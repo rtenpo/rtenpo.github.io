@@ -16,8 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="contact-L.css" />
     <link rel="shortcut icon" type="x-icon" href="img/logg.png" />
+    <script src="contactUs.js" defer></script>
     <script>
         $(document).ready(function() {
             $("#icon").click(function() {
@@ -39,38 +40,58 @@
 
 
         <ul>
-            <li><a class="" href="index.html" id="txt">Home</a></li>
-            <li><a href="presentation.html">PRESENTATION</a></li>
-            <li><a href="resources.html">RESOURCES</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="about.html">ABOUT</a></li>
+            <li><a class="" href="index-L.html" id="txt">Home</a></li>
+            <li><a href="presentation-L.html">PRESENTATION</a></li>
+            <li><a href="resources-L.html">RESOURCES</a></li>
+            <li><a href="contact-L.html">CONTACT</a></li>
+            <li><a href="about-L.html">ABOUT</a></li>
 
         </ul>
 
         <label id="icon"><i class="fas fa-bars"></i></label>
     </nav>
 
+    <br />
+    <br />
 
-    <div class="me">
-        <div class="content">
-            <h4>WELCOME TO</h4>
-            <h1>NETWORK AND TELECOM<span>(RT)</span></h1>
-            <h3>WEB SITE</h3>
+    <a href="contact.html" class="material-icons floating">dark_mode</a>
+
+    <div class="forum" onsubmit=" return false;">
+        <div class="ab-text">
+            <div class="heading">
+                <h1>CONTACT</h1>
+                <p>For any question, inquiry, advice or</p>
+                <p>request, do not hesitate to contact us:</p>
+            </div>
         </div>
-    </div>
 
-    <!--
-     <div class="enpo">
-        <img src="img/Untitled-1.png" alt="">
+        <form id="form">
+            <input class="input" type="text" id="name" placeholder="name" required />
+
+            <select class="input" id="specialty">
+					<option value="RT">RT</option>
+					<option value="IMSI">IMSI</option>
+				</select>
+
+            <select class="input" id="year">
+					<option value="1st">1st year</option>
+					<option value="2nd">2nd year</option>
+					<option value="3rd">3rd year</option>
+				</select>
+
+            <input class="input" type="email" id="email" placeholder="E-mail" required />
+            <textarea class="input" name="text" id="text" cols="30" rows="10" placeholder="How can we help?" required></textarea>
+            <button class="submit-btn" id="submitButton" type="submit">SEND</button>
+        </form>
     </div>
-    -->
-    <a href="index-L.html" class="material-icons floating">light_mode</a>
 
     <footer>
         <div class="bottom">
             <p>&#169; 2022 Designed by Lokmane & Iheb</p>
         </div>
     </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
