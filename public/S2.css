@@ -175,7 +175,7 @@ span {
 			rgba(15, 15, 26, 0.7) 75%,
 			#0f0f1a 100%
 		),
-		url(img/reseaux.png) center center no-repeat;
+		url(../img/reseaux.png) center center no-repeat;
 	background-size: cover;
 	z-index: 100;
 }
@@ -194,7 +194,7 @@ span {
 			rgba(15, 15, 26, 0.7) 75%,
 			#0f0f1a 100%
 		),
-		url(img/PS.png) center center no-repeat;
+		url(../img/OW.png) center center no-repeat;
 	background-size: cover;
 }
 
@@ -212,7 +212,7 @@ span {
 			rgba(15, 15, 26, 0.7) 75%,
 			#0f0f1a 100%
 		),
-		url(img/java.png) center center no-repeat;
+		url(../img/TW.png) center center no-repeat;
 	background-size: cover;
 }
 
@@ -230,7 +230,7 @@ span {
 			rgba(15, 15, 26, 0.7) 75%,
 			#0f0f1a 100%
 		),
-		url(img/DB.png) center center no-repeat;
+		url(../img/PS.png) center center no-repeat;
 	background-size: cover;
 }
 
@@ -248,7 +248,7 @@ span {
 			rgba(15, 15, 26, 0.7) 75%,
 			#0f0f1a 100%
 		),
-		url(img/TS.png) center center no-repeat;
+		url(../img/java.png) center center no-repeat;
 	background-size: cover;
 }
 
@@ -266,7 +266,7 @@ span {
 			rgba(15, 15, 26, 0.7) 75%,
 			#0f0f1a 100%
 		),
-		url(img/PL.png) center center no-repeat;
+		url(../img/TS.png) center center no-repeat;
 	background-size: cover;
 }
 

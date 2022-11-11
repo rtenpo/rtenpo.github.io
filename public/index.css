@@ -9,10 +9,6 @@
 	box-sizing: border-box;
 }
 
-body {
-	background-color: #0f0f1a;
-}
-
 /*-------------------------------------------- nav bar --------------------------------------*/
 
 nav {
@@ -87,7 +83,8 @@ nav #icon {
 		position: fixed;
 		width: 100%;
 		height: 100vh;
-		background-color: #0d0d16;
+		background-color: #0f0f1a;
+		overflow: scroll;
 		top: 80px;
 		z-index: 1000;
 		left: -100%;
@@ -122,130 +119,74 @@ span {
 	color: #0096ff;
 }
 
-/*-----------------------------------------------------------------------------*/
+/*-------------------------------------------- FIN DU NAV BAR --------------------------------------*/
 
-.ab-text {
-	padding: 100px 20%;
+body {
+	background-color: #0f0f1a;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-.heading {
-	text-align: center;
-}
-
-.heading h1 {
-	font-size: 14px;
-	color: white;
-	letter-spacing: 0.5px;
-	margin-bottom: 30px;
-}
-
-.heading p {
-	color: white;
-	font-size: 14px;
-	line-height: 28px;
-}
-
-.container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-	grid-gap: 1.7rem;
-	align-items: center;
-	margin-top: 5rem;
-}
-
-.box {
-	height: 340px;
-	width: auto;
-	border-radius: 10px;
-	overflow: hidden;
-	background: rgb(103, 145, 192);
-	transition: all 0.8s;
-	cursor: pointer;
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.box1 {
+.me {
+	height: 100vh;
+	width: 100%;
 	background: linear-gradient(
 			to bottom,
 			rgba(15, 15, 26, 0) 0%,
-			rgba(15, 15, 26, 0.3) 50%,
+			rgba(15, 15, 26, 0) 50%,
 			rgba(15, 15, 26, 0.7) 75%,
 			#0f0f1a 100%
 		),
-		url(img/S1.png) center center no-repeat;
+		url(../img/back.svg);
 	background-size: cover;
-	z-index: 100;
+	background-position: center;
 }
 
-.box1:hover {
-	transform: translateY(20px);
-	transition: all 0.5s ease;
-	opacity: 0.6;
-}
-
-.box2 {
-	background: linear-gradient(
-			to bottom,
-			rgba(15, 15, 26, 0) 0%,
-			rgba(15, 15, 26, 0.3) 50%,
-			rgba(15, 15, 26, 0.7) 75%,
-			#0f0f1a 100%
-		),
-		url(img/S2.png) center center no-repeat;
-	background-size: cover;
-}
-
-.box2:hover {
-	transform: translateY(20px);
-	transition: all 0.5s ease;
-	opacity: 0.6;
-}
-
-.box3 {
-	background: linear-gradient(
-			to bottom,
-			rgba(15, 15, 26, 0) 0%,
-			rgba(15, 15, 26, 0.3) 50%,
-			rgba(15, 15, 26, 0.7) 75%,
-			#0f0f1a 100%
-		),
-		url(img/youtube.png) center center no-repeat;
-	background-size: cover;
-}
-
-.box3:hover {
-	transform: translateY(20px);
-	transition: all 0.5s ease;
-	opacity: 0.6;
-}
-
-.box4 {
-	background: linear-gradient(
-			to bottom,
-			rgba(15, 15, 26, 0) 0%,
-			rgba(15, 15, 26, 0.3) 50%,
-			rgba(15, 15, 26, 0.7) 75%,
-			#0f0f1a 100%
-		),
-		url(img/apps.png) center center no-repeat;
-	background-size: cover;
-}
-
-.box4:hover {
-	transform: translateY(20px);
-	transition: all 0.5s ease;
-	opacity: 0.6;
-}
-
-.in {
+#mee {
 	position: absolute;
-	bottom: 20px;
-	color: white;
-	font-size: 14px;
-	letter-spacing: 1px;
+	display: grid;
+	grid-template: 100%;
+	align-items: center;
+	justify-items: center;
+	width: 50%;
+	height: 100%;
+	z-index: 100000;
+}
+
+#mee img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	height: 55%;
+	width: 50%;
+	left: 5%;
+}
+
+.content {
+	position: relative;
+	float: left;
+	top: 45%;
+	padding-right: 5%;
+	padding-left: 5%;
+	transform: translateY(-30%);
+}
+
+h1 {
+	color: rgb(255, 255, 255);
+	margin: 20px 0px 20px;
+	font-size: 50px;
+}
+
+h3 {
+	color: rgb(255, 255, 255);
+	font-size: 25px;
+	margin-bottom: 50px;
+}
+
+h4 {
+	color: rgb(255, 255, 255);
+	letter-spacing: 2px;
+	font-size: 20px;
 }
 
 .bottom {
