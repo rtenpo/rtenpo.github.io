@@ -1,72 +1,79 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<script
+			src="https://code.jquery.com/jquery-3.6.1.js"
+			integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+			crossorigin="anonymous"></script>
+		<script
+			src="https://kit.fontawesome.com/08dfe6355e.js"
+			crossorigin="anonymous"></script>
+		<link
+			rel="icon"
+			type="image/x-png"
+			href="img/artificial-intelligence.png" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+			integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="index.css" />
+		<link rel="shortcut icon" type="x-icon" href="img/logg.png" />
+		<script>
+			$(document).ready(function () {
+				$("#icon").click(function () {
+					$("ul").toggleClass("show");
+				});
+			});
+		</script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/08dfe6355e.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-png" href="img/artificial-intelligence.png">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="index.css">
-    <script>
-        $(document).ready(function() {
-            $('#icon').click(function() {
-                $('ul').toggleClass('show');
-            });
-        });
-    </script>
+		<title>RT-ENPO</title>
+	</head>
 
-    <title>RT-ENPO</title>
-</head>
+	<body>
+		<nav>
+			<a href="index.html"><img src="img/logg.png" width="60px" alt="" /></a>
 
+			<ul>
+				<li><a class="" href="index.html" id="txt">Home</a></li>
+				<li><a href="presentation.html">PRESENTATION</a></li>
+				<li><a href="resources.html">RESOURCES</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+			</ul>
 
+			<label id="icon"><i class="fas fa-bars"></i></label>
+		</nav>
 
-<body>
-    <nav>
+		<div class="me">
+			<div class="content">
+				<h4>WELCOME TO</h4>
+				<h1>NETWORK AND TELECOM<span>(RT)</span></h1>
+				<h3>WEB SITE</h3>
+			</div>
+		</div>
 
-        <label class="logo" for=""><span>RT</span>-ENPO</label>
-
-        <ul>
-            <li><a class="" href="index.html" id="txt">Home</a></li>
-            <li><a href="presentation.html">PRESENTATION</a></li>
-            <li><a href="resources.html">RESOURCES</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-
-        </ul>
-
-        <label id="icon"><i class="fas fa-bars"></i></label>
-    </nav>
-
-
-    <div class="me">
-        <div class="content">
-            <h4>WELCOME TO</h4>
-            <h1>Réseaux Télécom<span>(RT)</span></h1>
-            <h3>WEB SITE </h3>
-        </div>
+		<!--
+     <div class="enpo">
+        <img src="img/Untitled-1.png" alt="">
     </div>
+    -->
 
-    <div class="info" align="center">
-        <p>we are here</p>
-
-        <a href="https://goo.gl/maps/YzngNocXejYKCUcd6" target="_blank"><img id="position" src="img/maps.jpg" alt="location of school"></a>
-
-
-    </div>
-
-    <footer>
-        <div class="bottom">
-            <p>&#169; 2022 Designed by Lokmane & Iheb </p>
-        </div>
-    </footer>
-</body>
-
-
+		<footer>
+			<div class="bottom">
+				<p>&#169; 2022 Designed by Lokmane & Iheb</p>
+			</div>
+		</footer>
+	</body>
 </html>
