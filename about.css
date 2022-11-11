@@ -145,6 +145,7 @@ span {
 .card:hover .in {
 	transform: rotateX(-180deg);
 }
+
 .card:last-child:hover .in {
 	transform: none;
 }
