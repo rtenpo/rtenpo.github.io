@@ -1,0 +1,392 @@
+/** @format */
+
+* {
+	padding: 0%;
+	margin: 0%;
+	list-style: none;
+	text-decoration: none;
+	font-family: "poppins", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #0f0f1a;
+	height: 100vh;
+	color: white;
+}
+
+/*-------------------------------------------- nav bar --------------------------------------*/
+
+nav {
+	height: 80px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100001;
+	width: 100%;
+	background-color: #0f0f1a;
+	filter: drop-shadow(-2px 3px 5px rgba(112, 112, 112, 0.384));
+}
+
+nav img {
+	padding-top: 10px;
+	margin-left: 4%;
+}
+
+label.logo {
+	font-size: 35px;
+	font-weight: bold;
+	color: white;
+	padding: 0 0%;
+	margin-top: -10%;
+	margin-left: 3%;
+	line-height: 80px;
+}
+
+nav ul {
+	float: right;
+	margin-right: 40px;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 8px;
+	line-height: 80px;
+}
+
+nav a {
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 1px solid transparent;
+	padding: 7px 10px;
+	border-radius: 3px;
+}
+
+nav li a:hover {
+	color: #0096ff;
+}
+
+nav #icon {
+	color: white;
+	font-size: 30px;
+	line-height: 80px;
+	float: right;
+	display: none;
+	margin-right: 3%;
+	cursor: pointer;
+}
+
+span {
+	color: #0096ff;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+	grid-gap: max(4rem, 7vw);
+	align-items: center;
+	margin: 5rem 15%;
+	margin-top: 15vh;
+}
+
+.card {
+	height: 240px;
+	width: 240px;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: all 0.8s;
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	align-self: center;
+	justify-self: center;
+	border-radius: 3rem;
+}
+
+.in {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: white;
+	transform-style: preserve-3d;
+	transition: all 0.6s ease-out;
+}
+
+.front,
+.back {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	backface-visibility: hidden;
+	border-radius: 3rem;
+}
+
+.front {
+	justify-content: center;
+	align-items: center;
+}
+
+.back {
+	justify-content: space-around;
+	align-items: space-around;
+	flex-direction: column;
+	background-color: white;
+	transform: rotateX(180deg);
+}
+
+.card:hover .in {
+	transform: rotateX(-180deg);
+}
+
+.card:last-child:hover .in {
+	transform: none;
+}
+
+hr {
+	align-self: center;
+	width: 80%;
+	height: 7px;
+	border-radius: 7px;
+	background-color: #000000;
+}
+
+.link {
+	overflow: hidden;
+}
+
+.link a {
+	pointer-events: none;
+	text-decoration: none;
+	width: 0%;
+	height: 0%;
+}
+
+.link:hover a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+
+.youtube a {
+	border-radius: 3rem;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+/*----------------------  back of the card   ----------------------*/
+
+.iheb {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 3rem;
+	margin: 1rem 1rem 0;
+	transition: all 0.25s ease-in-out;
+}
+
+.iheb img {
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+	width: 100px;
+	margin-left: 10%;
+	transition: all 0.25s ease-in-out;
+}
+
+.iheb span {
+	text-decoration: none;
+	overflow: hidden;
+	font-size: 0px;
+	cursor: pointer;
+}
+
+.iheb:hover {
+	background-color: #f8f2da;
+	border-bottom: 3px solid hsla(0, 0%, 0%, 0.173);
+	border-top: 3px solid hsla(0, 0%, 0%, 0.173);
+	border-radius: 3rem;
+	margin: 1rem 1rem 0 1rem;
+	animation: link 0.5s ease-out forwards;
+}
+
+.iheb:active {
+	background-color: #fdfbf4;
+	transition: all 0.1s ease-in-out;
+}
+
+.iheb:hover img {
+	margin-left: 2px;
+	width: 38%;
+	transition: all 0.25s ease-in-out;
+}
+
+.iheb:hover span {
+	align-self: center;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	margin: auto auto;
+	transition: all 0.25s ease-in-out;
+}
+
+@keyframes link {
+	0% {
+		scale: 1;
+	}
+	33% {
+		scale: 1.1;
+	}
+	100% {
+		scale: 1;
+	}
+}
+
+/*----------------------  back of the card   ----------------------*/
+
+.lokmane {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 3rem;
+	margin: 0 1rem 1rem;
+	transition: all 0.25s ease-in-out;
+}
+
+.lokmane img {
+	object-fit: cover;
+	object-position: center;
+	border-radius: 50%;
+	width: 100px;
+	margin-right: 10%;
+	transition: all 0.25s ease-in-out;
+}
+
+.lokmane span {
+	text-decoration: none;
+	overflow: hidden;
+	font-size: 0;
+	cursor: pointer;
+}
+
+.lokmane:hover {
+	background-color: #f8f2da;
+	border-bottom: 3px solid hsla(0, 0%, 0%, 0.173);
+	border-top: 3px solid #0000002c;
+	border-radius: 3rem;
+	margin: 0 1rem 1rem 1rem;
+	animation: link 0.5s ease-out;
+}
+
+.lokmane:active {
+	background-color: #fdfbf4;
+	transition: all 0.1s ease-in-out;
+}
+
+.lokmane:hover img {
+	margin-right: 2px;
+	width: 38%;
+	margin-left: 2px;
+	transition: all 0.25s ease-in-out;
+}
+
+.lokmane:hover span {
+	align-self: center;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-decoration: none;
+	width: 100%;
+	margin: auto 0;
+	transition: all 0.25s ease-in-out;
+}
+
+.bottom {
+	position: sticky;
+	text-align: center;
+	color: #adb5bd;
+	font-size: 1rem;
+	letter-spacing: 1px;
+	margin-top: max(12vw, 100px);
+	padding-bottom: min(3vh, 20px);
+	cursor: default;
+}
+
+.bottom::before {
+	content: "";
+	width: 1%;
+	height: 100%;
+	transition: all 1s ease-out;
+}
+
+.bottom:hover,
+.bottom::before {
+	width: 100%;
+	color: #0096ff;
+	text-shadow: 0 0 10px #0096ff;
+}
+
+@media (max-width: 100%) {
+	label.logo {
+		font-size: 32px;
+		padding-left: 60px;
+	}
+	nav ul {
+		margin-right: 20px;
+	}
+	nav a {
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 1040px) {
+	#mee {
+		left: -100%;
+	}
+}
+
+@media (max-width: 909px) {
+	nav #icon {
+		display: block;
+	}
+	nav ul {
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background-color: #0d0d16;
+		top: 80px;
+		z-index: 1000;
+		left: -100%;
+		text-align: center;
+		transition: all 0.5s;
+	}
+	nav li {
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav a {
+		font-size: 20px;
+	}
+	nav ul.show {
+		left: 0;
+	}
+	.iheb {
+		margin: 1rem 0 0 0rem;
+	}
+	.lokmane {
+		margin: 0 0rem 1rem 0;
+	}
+}
